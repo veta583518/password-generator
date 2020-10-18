@@ -9,10 +9,10 @@ var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
-  // Set array and value to blank to begin
+  // Set properties to passwordText 
   var passwordText = {
     value: [],
-    array: [],
+    input: [],
   }
   
   var password= generatePassword();
@@ -32,8 +32,8 @@ function writePassword() {
       window.alert ("Your selection was not a number. Please try again!");
       return
     }
-    // if (passwordLength => 8 && passwordLength <= 128)  {
-    //   window.alert (`Your password will be ${passwordLength} characters long.`);
+    // if (inputLength => 8 && inputLength <= 128)  {
+    //   window.alert (`Your password will be ${inputLength} characters long.`);
     // }
 
     // Confirm prompts
@@ -43,35 +43,35 @@ function writePassword() {
     // If confirmed add to array
     if (lowerConfirm) {
       passwordText.array += lowerCase;
-      console.log(passwordText.array);
+      console.log(passwordText.input);
     }
 
     // Do you want upper-case letters included?
     var upperConfirm = window.confirm("Select ok if you would like to have upper-case letters in your password?");
     // If confirmed add to array
     if(upperConfirm) {
-      passwordText.array += upperCase;
-      console.log(passwordText.array);
+      passwordText.input += upperCase;
+      console.log(passwordText.input);
     }
 
     // Do you want numbers included?
     var numericConfirm = window.confirm("Select ok if you would like to have numbers in your password?");
     // If confirmed add number to the array
     if(numericConfirm) {
-      passwordText.array += numeric;
-      console.log(passwordText.array);
+      passwordText.input += numeric;
+      console.log(passwordText.input);
     }
 
     // Do you want special characters included?
     var specialConfirm = window.confirm("Select ok if you would like to use special characters in your password?");
     // If confirmed add special characters to the array
     if(specialConfirm) {
-      passwordText.array += specialCharacter;
-      console.log(passwordText.array);
+      passwordText.input += specialCharacter;
+      console.log(passwordText.input);
     }
 
     for (var i=0; i < inputLength; i++) {
-    var main = passwordText.array[(Math.floor(Math.random() * passwordText.array.length))];
+    var main = passwordText.input[(Math.floor(Math.random() * passwordText.input.length))];
     passwordText.value += main
     }
   
