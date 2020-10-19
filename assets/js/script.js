@@ -39,7 +39,7 @@ function writePassword() {
     // Confirm prompts
 
     // Do you want lower-case letters included?
-    var lowerConfirm = window.confirm("Select ok if you would like to have lower-case letters in your password");
+    var lowerConfirm = window.confirm("Select OK if you would like to have lower-case letters in your password");
     // If confirmed add to array
     if (lowerConfirm) {
       passwordText.array += lowerCase;
@@ -47,7 +47,7 @@ function writePassword() {
     }
 
     // Do you want upper-case letters included?
-    var upperConfirm = window.confirm("Select ok if you would like to have upper-case letters in your password?");
+    var upperConfirm = window.confirm("Select OK if you would like to have upper-case letters in your password?");
     // If confirmed add to array
     if(upperConfirm) {
       passwordText.input += upperCase;
@@ -55,7 +55,7 @@ function writePassword() {
     }
 
     // Do you want numbers included?
-    var numericConfirm = window.confirm("Select ok if you would like to have numbers in your password?");
+    var numericConfirm = window.confirm("Select OK if you would like to have numbers in your password?");
     // If confirmed add number to the array
     if(numericConfirm) {
       passwordText.input += numeric;
@@ -63,11 +63,17 @@ function writePassword() {
     }
 
     // Do you want special characters included?
-    var specialConfirm = window.confirm("Select ok if you would like to use special characters in your password?");
+    var specialConfirm = window.confirm("Select OK if you would like to use special characters in your password?");
     // If confirmed add special characters to the array
     if(specialConfirm) {
       passwordText.input += specialCharacter;
       console.log(passwordText.input);
+    }
+
+    // Validate to make sure that at least one character selection was made
+    if ((lowerConfirm, upperConfirm, numericConfirm, specialConfirm) === false) {
+      window.alert("You must make at least one selection for character values.");
+      return
     }
 
     for (var i=0; i < inputLength; i++) {
