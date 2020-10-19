@@ -13,7 +13,7 @@ The purpose is to create an application that can be used to generate a random pa
 
 Below is a screenshot of the mock-up that was to be followed
 
-![Password Generator Mock Up] 
+![Password Generator Mock Up] (https://github.com/veta583518/password-generator/blob/main/assets/Images/03-javascript-homework-demo.png)
 
 Link to deployed application
 
