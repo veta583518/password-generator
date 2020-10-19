@@ -16,4 +16,4 @@ Below is a screenshot of the mock-up that was to be followed
 ![Password Generator Mock Up] (https://github.com/veta583518/password-generator/blob/main/assets/Images/03-javascript-homework-demo.png)
 
 Link to deployed application
-
+[Password Generator] (https://veta583518.github.io/password-generator/)
