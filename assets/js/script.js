@@ -40,7 +40,7 @@ function writePassword() {
 
     // Do you want lower-case letters included?
     var lowerConfirm = window.confirm("Select OK if you would like to have lower-case letters in your password");
-    // If confirmed add to array
+    // If confirmed add to input property
     if (lowerConfirm) {
       passwordText.input += lowerCase;
       console.log(passwordText.input);
@@ -48,7 +48,7 @@ function writePassword() {
 
     // Do you want upper-case letters included?
     var upperConfirm = window.confirm("Select OK if you would like to have upper-case letters in your password?");
-    // If confirmed add to array
+    // If confirmed add to input property
     if(upperConfirm) {
       passwordText.input += upperCase;
       console.log(passwordText.input);
@@ -56,7 +56,7 @@ function writePassword() {
 
     // Do you want numbers included?
     var numericConfirm = window.confirm("Select OK if you would like to have numbers in your password?");
-    // If confirmed add number to the array
+    // If confirmed add number to input property
     if(numericConfirm) {
       passwordText.input += numeric;
       console.log(passwordText.input);
@@ -64,7 +64,7 @@ function writePassword() {
 
     // Do you want special characters included?
     var specialConfirm = window.confirm("Select OK if you would like to use special characters in your password?");
-    // If confirmed add special characters to the array
+    // If confirmed add special characters to input property
     if(specialConfirm) {
       passwordText.input += specialCharacter;
       console.log(passwordText.input);
