@@ -42,7 +42,7 @@ function writePassword() {
     var lowerConfirm = window.confirm("Select OK if you would like to have lower-case letters in your password");
     // If confirmed add to array
     if (lowerConfirm) {
-      passwordText.array += lowerCase;
+      passwordText.input += lowerCase;
       console.log(passwordText.input);
     }
 
@@ -71,7 +71,7 @@ function writePassword() {
     }
 
     // Validate to make sure that at least one character selection was made
-    if ((lowerConfirm, upperConfirm, numericConfirm, specialConfirm) === false) {
+    if (((lowerConfirm) === false) && ((upperConfirm)=== false) && ((numericConfirm)=== false) && ((specialConfirm)=== false)) {
       window.alert("You must make at least one selection for character values.");
       return
     }
